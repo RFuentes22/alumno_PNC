@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Datos incorrectos</title>
+</head>
+<body>
+	<h2>Datos ingresados incorrectamente</h2>
+	<table>
+	<tr th:each="f : ${list}">
+		<td th:text="${f}" />
+	</tr>
+	</table>
+</body>
+</html>
